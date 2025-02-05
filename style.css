@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f2f5;
+    padding: 20px;
+}
+
+.profile-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    display: block;
+    object-fit: cover;
+    border: 4px solid #f0f2f5;
+}
+
+.full-name {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.job-title {
+    text-align: center;
+    color: #4a5568;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.bio {
+    text-align: center;
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    color: #4a5568;
+}
+
+.info-item svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.social-link {
+    color: #4a5568;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #2d3748;
+}
+
+.time-utc {
+    text-align: center;
+    color: #718096;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e2e8f0;
+}
+
+@media (max-width: 480px) {
+    .profile-card {
+        padding: 1.5rem;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .full-name {
+        font-size: 1.25rem;
+    }
+
+    .job-title {
+        font-size: 1rem;
+    }
+}
